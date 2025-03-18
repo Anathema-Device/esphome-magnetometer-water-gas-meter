@@ -3,18 +3,18 @@
 
 substitutions:
   # water or gas
-  device_class: 'water'
+  device_class: 'gas'
 
   # mdi:water or mdi:meter-gas
-  device_icon: 'mdi:water'
+  device_icon: 'mdi:gas'
 
   # For water one of: CCF, ft³, gal, L, m³
   # For gas one of: CCF, ft³, m³
-  volume_unit: 'gal'
+  volume_unit: 'm³'
 
   i2c_scl: GPIO5  # D1
   i2c_sda: GPIO4  # D2
-
+ 
   # Set these only if you have connected two QMC5883L to one device, see esphome-two-meters.yaml
   prefix_name: ''
   prefix_id: ''
