@@ -1,6 +1,7 @@
 ---
 substitutions:
   gpio_led: GPIO3 # GPIO2
+  gpio_led: GPIO1
   # For gas one of: CCF, ft³, m³
   volume_unit: 'm³'
   # The most common value in US seems to be 0.125 ft³
@@ -22,4 +23,9 @@ switch:
     id: led
     pin:
       number: ${gpio_led}
+      inverted: true
+  - platform: gpio
+    id: led2
+    pin:
+      number: ${gpio_led2}
       inverted: true
