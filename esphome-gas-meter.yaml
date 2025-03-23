@@ -24,8 +24,13 @@ switch:
     pin:
       number: ${gpio_led}
       inverted: true
+    on_turn_on:
+      switch.turn_off: led2
+    on_turn_off:
+      switch.turn_on: led2
   - platform: gpio
     id: led2
     pin:
       number: ${gpio_led2}
       inverted: true
+      
