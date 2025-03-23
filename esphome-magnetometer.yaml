@@ -263,10 +263,10 @@ sensor:
               id(${prefix_id}axis_value_high) = true;
               id(${prefix_id}half_rotations_total) += 1;
               id(${prefix_id}half_rotations_flow) += 1;
-              id(led).turn_on();
+              id(led).toggle(); # turn_on();
             } else if (x < id(${prefix_id}threshold_lower).state && id(${prefix_id}axis_value_high)) {
               id(${prefix_id}axis_value_high) = false;
-              id(led).turn_off();
+              id(led).toggle(); # turn_off();
             }
     filters:
       - delta: 3
