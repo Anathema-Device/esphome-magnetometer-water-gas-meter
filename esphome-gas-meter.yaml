@@ -1,7 +1,7 @@
 ---
 substitutions:
   gpio_led: GPIO3 # GPIO2
-  gpio_led: GPIO1
+  gpio_led2: GPIO1
   # For gas one of: CCF, ft³, m³
   volume_unit: 'm³'
   # The most common value in US seems to be 0.125 ft³
